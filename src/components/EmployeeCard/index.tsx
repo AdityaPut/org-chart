@@ -20,8 +20,8 @@ const EmployeeCard = (props: EmployeeCardProps) => {
   const { name, avatar, role } = employee;
   const initialName = useGetInitialName(name);
   return (
-    <Card className='w-72'>
-      <CardContent className='flex direction-alternate justify-center items-center gap-1 p-2'>
+    <Card className='w-44 h-[185px]'>
+      <CardContent className='flex flex-col justify-center items-center gap-1 p-2'>
         {avatar && (
           <Avatar className='w-[100px] h-[100px] my-2'>
             <AvatarImage src={avatar} alt={name} />
