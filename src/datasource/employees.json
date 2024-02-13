@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "raelynn",
+    "managerId": null,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CEO"
+  },
+  {
+    "id": 2,
+    "name": "darin",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/5c31f6dbbeb259be8da2f61ed94878cc?s=400&d=robohash&r=x",
+    "role": "VP of Engineering"
+  },
+  {
+    "id": 3,
+    "name": "kacie",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/1f6b6e3e3f3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "VP of Design"
+  },
+  {
+    "id": 4,
+    "name": "jordana",
+    "managerId": 2,
+    "avatar": "https://gravatar.com/avatar/2e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Engineering Manager"
+  },
+  {
+    "id": 5,
+    "name": "everett",
+    "managerId": 2,
+    "avatar": "https://gravatar.com/avatar/3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b3e?s=400&d=robohash&r=x",
+    "role": "Software Engineer"
+  },
+  {
+    "id": 6,
+    "name": "bertha",
+    "managerId": 2,
+    "avatar": "https://gravatar.com/avatar/4e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Software Engineer"
+  },
+  {
+    "id": 7,
+    "name": "peg",
+    "managerId": 3,
+    "avatar": "https://gravatar.com/avatar/5e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Design Manager"
+  },
+  {
+    "id": 8,
+    "name": "hugh",
+    "managerId": 3,
+    "avatar": "https://gravatar.com/avatar/6e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Designer"
+  },
+  {
+    "id": 9,
+    "name": "eveleen",
+    "managerId": 3,
+    "avatar": "https://gravatar.com/avatar/7e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Designer"
+  },
+  {
+    "id": 10,
+    "name": "evelina",
+    "managerId": 7,
+    "avatar": "https://gravatar.com/avatar/8e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
+    "role": "Designer"
+  }
+]
