@@ -46,7 +46,7 @@
     "name": "peg",
     "managerId": 3,
     "avatar": "https://gravatar.com/avatar/5e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
-    "role": "Design Manager"
+    "role": "Senior Designer"
   },
   {
     "id": 8,
@@ -60,12 +60,12 @@
     "name": "eveleen",
     "managerId": 3,
     "avatar": "https://gravatar.com/avatar/7e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
-    "role": "Designer"
+    "role": "Designer Manager"
   },
   {
     "id": 10,
     "name": "evelina",
-    "managerId": 7,
+    "managerId": 9,
     "avatar": "https://gravatar.com/avatar/8e3b3e3b3e3b3e3b3e3b3e3b3e3b3e3b?s=400&d=robohash&r=x",
     "role": "Designer"
   }
