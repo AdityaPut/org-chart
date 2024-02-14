@@ -10,7 +10,7 @@ export const useGetInitialName = (fullname?: string) => {
   };
 
   useEffect(() => {
-    const initialName = getInitialName(fullname);
+    const initialName = getInitialName(fullname)?.toUpperCase();
     setName(initialName);
   }, [fullname]);
 

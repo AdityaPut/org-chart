@@ -5,6 +5,7 @@ export type Employee = {
   role?: string;
   avatar?: string;
   children?: Employee[];
+  descendantsTotal?: number;
 };
 
 export type EmployeeMap = Record<number, Employee>;
