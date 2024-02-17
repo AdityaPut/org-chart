@@ -2,7 +2,7 @@
 
 import { Check, ChevronsUpDown } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
+import { cn, isFunction } from '@/lib/utils';
 import { Button } from '@components/ui/Button';
 import {
   Command,
@@ -26,17 +26,18 @@ type ComboboxOption = {
 type ComboboxProps = {
   name: string;
   options: ComboboxOption[];
+  searchQuery?: string;
+  onSearchChange?: (query: string) => void;
 };
 
 export function Combobox(props: ComboboxProps) {
-  const { name, options } = props;
+  const { name, options, searchQuery, onSearchChange } = props;
 
   const emptyText = `No ${name} found.`;
   const placeholder = `Search ${name}...`;
   const selectText = `Select ${name}...`;
 
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState('');
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -47,8 +48,8 @@ export function Combobox(props: ComboboxProps) {
           aria-expanded={open}
           className='w-[200px] justify-between'
         >
-          {value
-            ? options.find((opt) => opt.value === value)?.label
+          {searchQuery
+            ? options.find((opt) => opt.value === searchQuery)?.label
             : selectText}
           <ChevronsUpDown className='ml-2 h-4 w-4 shrink-0 opacity-50' />
         </Button>
@@ -63,14 +64,18 @@ export function Combobox(props: ComboboxProps) {
                 key={opt.value}
                 value={opt.value}
                 onSelect={(currentValue) => {
-                  setValue(currentValue === value ? '' : currentValue);
+                  if (isFunction(onSearchChange)) {
+                    onSearchChange(
+                      currentValue === searchQuery ? '' : currentValue
+                    );
+                  }
                   setOpen(false);
                 }}
               >
                 <Check
                   className={cn(
                     'mr-2 h-4 w-4',
-                    value === opt.value ? 'opacity-100' : 'opacity-0'
+                    searchQuery === opt.value ? 'opacity-100' : 'opacity-0'
                   )}
                 />
                 {opt.label}
