@@ -54,13 +54,43 @@ const getEmployeesWithDescendantsTotal = (
   });
 };
 
+const filterEmployees = (
+  mapEmployees: EmployeeMap,
+  flattenEmployees: Employee[],
+  filterQuery: string
+) => {
+  if (isEmpty(filterQuery)) {
+    return flattenEmployees;
+  }
+
+  // if filterQuery is not empty, return the employee and find the employee's parent until the top level
+  const selectedEmployees = [];
+  let currentEmployee: Employee | undefined =
+    mapEmployees[parseInt(filterQuery)];
+  while (currentEmployee) {
+    selectedEmployees.push(currentEmployee);
+    if (currentEmployee.managerId) {
+      currentEmployee = mapEmployees[currentEmployee.managerId];
+    } else {
+      currentEmployee = undefined;
+    }
+  }
+  return selectedEmployees;
+};
+
 export const useGetNestedEmployees = (
-  flattenEmployees: Employee[]
+  flattenEmployees: Employee[],
+  filterQuery: string
 ): Employee[] => {
   const mapEmployees = useGetMapEmployees(flattenEmployees);
 
   return useMemo(() => {
-    const sortedEmployees = sortEmployeesByManagerId(flattenEmployees);
+    const filteredEmployees = filterEmployees(
+      mapEmployees,
+      flattenEmployees,
+      filterQuery
+    );
+    const sortedEmployees = sortEmployeesByManagerId(filteredEmployees);
     const nestedEmployees = convertNestedEmployees(
       sortedEmployees,
       mapEmployees
