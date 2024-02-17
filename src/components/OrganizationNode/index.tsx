@@ -46,7 +46,7 @@ const ItemWithNodeLine = (
   );
 };
 
-export const OrganizationNode = (props: OrganizationNodeProps) => {
+const OrganizationNode = (props: OrganizationNodeProps) => {
   const { employee } = props;
 
   const renderEmployeeCard = () => (
@@ -84,3 +84,5 @@ export const OrganizationNode = (props: OrganizationNodeProps) => {
 
   return renderEmployeeCard();
 };
+
+export default OrganizationNode;

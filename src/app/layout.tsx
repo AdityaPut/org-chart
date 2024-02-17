@@ -7,7 +7,7 @@ export const fontSans = Inter({
   variable: '--font-sans',
 });
 import { cn } from '@/lib/utils';
-import { NavMenu } from '@/components/NavMenu';
+import NavMenu from '@/components/NavMenu';
 
 export const metadata: Metadata = {
   title: 'Create Next App',

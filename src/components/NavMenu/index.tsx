@@ -1,6 +1,6 @@
 'use client';
 
-export const NavMenu = () => {
+const NavMenu = () => {
   return (
     <nav className='bg-white border-gray-200 dark:bg-gray-900 shadow-md fixed w-[100vw] z-10'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
@@ -13,3 +13,5 @@ export const NavMenu = () => {
     </nav>
   );
 };
+
+export default NavMenu;
