@@ -59,3 +59,14 @@ This will start the test runner in the interactive watch mode. You can also see 
 - [Jest](https://jestjs.io/) - A delightful JavaScript Testing Framework with a focus on simplicity
 - [shadecn/ui](https://ui.shadcn.com/) - A UI library for React that is built using Tailwind CSS
 - [tailwindcss](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs
+
+## Screenshots
+
+### Image
+<img width="1507" alt="Screenshot 2024-02-18 at 20 59 04" src="https://github.com/AdityaPut/org-chart/assets/53312721/e27c98d1-dc67-4094-8577-a3cf2d7959b9">
+<img width="1512" alt="Screenshot 2024-02-18 at 16 27 44" src="https://github.com/AdityaPut/org-chart/assets/53312721/1b41ece6-2f2f-4480-9c3d-9b04c423f52f">
+<img width="1509" alt="Screenshot 2024-02-18 at 16 28 02" src="https://github.com/AdityaPut/org-chart/assets/53312721/5f6bb0d3-5c3a-46e1-a923-163eb230212c">
+
+### Video
+
+https://github.com/AdityaPut/org-chart/assets/53312721/2f0b736e-2986-430d-8cf2-54e67cedd7cd
