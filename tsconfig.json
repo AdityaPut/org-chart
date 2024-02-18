@@ -17,11 +17,12 @@
         "name": "next"
       }
     ],
+    "types": ["@testing-library/jest-dom"],
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@lib/*": ["./src/lib/*"],
-      "@datasource/*": ["./src/datasource/*"],
+      "@datasource/*": ["./src/datasource/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

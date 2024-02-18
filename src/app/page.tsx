@@ -6,6 +6,7 @@ import { useInitValidateEmployees } from '@/hooks/employees/useInitValidateEmplo
 import { isEmpty } from '@/lib/utils';
 import employeesData from '@datasource/employees.json';
 import { AlertCircle } from 'lucide-react';
+import structuredClone from '@ungap/structured-clone';
 
 export default function Home() {
   const { employees, errorText } = useInitValidateEmployees(

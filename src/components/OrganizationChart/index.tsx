@@ -6,6 +6,7 @@ import { FilterProvider } from '@/context/filter';
 import { useGetNestedEmployees } from '@/hooks/employees/useGetNestedEmployees';
 import type { Employee } from '@/types';
 import { useState } from 'react';
+import structuredClone from '@ungap/structured-clone';
 
 type OrganizationChartProps = {
   employeesData: Employee[];
@@ -19,7 +20,10 @@ export default function OrganizationChart(props: OrganizationChartProps) {
     filterQuery
   );
   return (
-    <main className='flex min-h-screen flex-col items-center p-24'>
+    <main
+      className='flex min-h-screen flex-col items-center p-24'
+      data-testid='organization-chart'
+    >
       <FilterProvider
         initialState={{
           filterQuery,
