@@ -55,7 +55,13 @@ export function Combobox(props: ComboboxProps) {
         </Button>
       </PopoverTrigger>
       <PopoverContent className='w-[200px] p-0'>
-        <Command>
+        <Command
+          filter={(value: string, search: string) => {
+            const label =
+              options.find((opt) => opt.value === value)?.label ?? '';
+            return label.toLowerCase().includes(search.toLowerCase()) ? 1 : 0;
+          }}
+        >
           <CommandInput placeholder={placeholder} />
           <CommandEmpty>{emptyText}</CommandEmpty>
           <CommandGroup>
