@@ -23,7 +23,7 @@ const FilterGroup = (props: FilterGroupProps) => {
   );
 
   return (
-    <div className='flex justify-end w-full'>
+    <div className='flex justify-end w-full pb-2'>
       <Combobox
         name='employee'
         options={options}
