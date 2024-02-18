@@ -1,33 +1,29 @@
 'use client';
 
-import FilterGroup from '@/components/FilterGroup';
-import OrganizationNode from '@/components/OrganizationNode';
-import { FilterProvider } from '@/context/filter';
-import { useGetNestedEmployees } from '@/hooks/employees/useGetNestedEmployees';
+import OrganizationChart from '@/components/OrganizationChart';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/Alert';
+import { useInitValidateEmployees } from '@/hooks/employees/useInitValidateEmployees';
+import { isEmpty } from '@/lib/utils';
 import employeesData from '@datasource/employees.json';
-import { useState } from 'react';
+import { AlertCircle } from 'lucide-react';
 
 export default function Home() {
-  const [filterQuery, setFilterQuery] = useState('');
-  const nestedEmployees = useGetNestedEmployees(
-    structuredClone(employeesData),
-    filterQuery
+  const { employees, errorText } = useInitValidateEmployees(
+    structuredClone(employeesData)
   );
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <FilterProvider
-        initialState={{
-          filterQuery,
-          onSearchChange: (search) => {
-            setFilterQuery(search);
-          },
-        }}
-      >
-        <FilterGroup employees={employeesData} />
-      </FilterProvider>
-      {nestedEmployees.map((employee) => (
-        <OrganizationNode key={employee.id} employee={employee} />
-      ))}
-    </main>
+    <>
+      {isEmpty(errorText) ? (
+        <OrganizationChart employeesData={employees} />
+      ) : (
+        <div className='max-w-xl'>
+          <Alert variant='destructive'>
+            <AlertCircle className='h-4 w-4' />
+            <AlertTitle>Error</AlertTitle>
+            <AlertDescription>{errorText}</AlertDescription>
+          </Alert>
+        </div>
+      )}
+    </>
   );
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "maurice",
+    "managerId": null,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CEO"
+  },
+  {
+    "id": 2,
+    "name": "hayleigh",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CTO"
+  },
+  {
+    "id": 3,
+    "name": "edwyn",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CFO"
+  },
+  {
+    "id": 4,
+    "name": "keane",
+    "managerId": null,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CMO"
+  },
+  {
+    "id": 5,
+    "name": "kylee",
+    "managerId": null,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CDO"
+  }
+]

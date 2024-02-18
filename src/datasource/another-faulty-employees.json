@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "lori",
+    "managerId": null,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "CEO"
+  },
+  {
+    "id": 2,
+    "name": "fletcher",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "VP of Engineering"
+  },
+  {
+    "id": 3,
+    "name": "tabitha",
+    "managerId": 1,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "VP of Design"
+  },
+  {
+    "id": 4,
+    "name": "linton",
+    "managerId": 2,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "Engineering Manager"
+  },
+  {
+    "id": 5,
+    "name": "tressa",
+    "managerId": 3,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "Designer"
+  },
+  {
+    "id": 4,
+    "name": "linton",
+    "managerId": 3,
+    "avatar": "https://gravatar.com/avatar/04635391fc3b415111d01c9072a075c1?s=400&d=robohash&r=x",
+    "role": "Designer"
+  }
+]
