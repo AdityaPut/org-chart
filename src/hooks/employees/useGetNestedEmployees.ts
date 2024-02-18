@@ -98,5 +98,5 @@ export const useGetNestedEmployees = (
     const employeesWithDescendantsTotal =
       getEmployeesWithDescendantsTotal(nestedEmployees);
     return employeesWithDescendantsTotal;
-  }, [flattenEmployees, mapEmployees]);
+  }, [flattenEmployees, mapEmployees, filterQuery]);
 };
