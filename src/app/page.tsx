@@ -16,13 +16,13 @@ export default function Home() {
       {isEmpty(errorText) ? (
         <OrganizationChart employeesData={employees} />
       ) : (
-        <div className='max-w-xl'>
-          <Alert variant='destructive'>
+        <main className='flex min-h-screen flex-col items-center p-24'>
+          <Alert variant='destructive' className='max-w-xl'>
             <AlertCircle className='h-4 w-4' />
             <AlertTitle>Error</AlertTitle>
             <AlertDescription>{errorText}</AlertDescription>
           </Alert>
-        </div>
+        </main>
       )}
     </>
   );
