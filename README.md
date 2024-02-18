@@ -50,7 +50,7 @@ pnpm test
 bun test
 ```
 
-This will start the test runner in the interactive watch mode. You can also see the test results in your terminal.
+This will start the test runner in the interactive watch mode. You can also see the test results in your terminal or you can open it from `./coverage/index.html` to see the coverage report.
 
 ## Built With
 
@@ -70,3 +70,8 @@ This will start the test runner in the interactive watch mode. You can also see 
 ### Video
 
 https://github.com/AdityaPut/org-chart/assets/53312721/2f0b736e-2986-430d-8cf2-54e67cedd7cd
+
+
+## Unit Test Coverage
+
+<img width="1510" alt="Screenshot 2024-02-18 at 22 23 40" src="https://github.com/AdityaPut/org-chart/assets/53312721/9c85e2e0-c2e2-49fd-b2fe-7a5910bdef23">
