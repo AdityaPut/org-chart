@@ -20,6 +20,7 @@
     "types": ["@testing-library/jest-dom"],
     "paths": {
       "@/*": ["./src/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@components/*": ["./src/components/*"],
       "@lib/*": ["./src/lib/*"],
       "@datasource/*": ["./src/datasource/*"]
